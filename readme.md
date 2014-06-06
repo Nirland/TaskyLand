@@ -30,7 +30,7 @@ Also started the development of the SPA client, which is at a very early stage, 
 ### API
 For testing api you can use test accounts(Account:Password): Nirland:123 or Telin:123. 
 Also you can modify database seeder for your start accounts.
-Most of HTTP clients support basic auth. 
+Most of HTTP clients support basic auth.<br> 
 You must send HTTP header <b>Authorization:Basic base64_encode(Account:Password)</b>, if you work manually.
 Also you must send HTTP header <b>Content-Type:application/x-www-form-urlencoded</b> for POST and PUT requests.
 API basic route is <b>http://localhost:8000/api</b>.
