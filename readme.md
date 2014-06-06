@@ -16,8 +16,8 @@ Also started the development of the SPA client, which is at a very early stage, 
 - Client side implementation is a single page application written on JavaScript and uses AngularJS framework.
 
 ## System requirments
-PHP 5.3+
-MariaDB or MySQL 5.1+ 
+- PHP 5.3+
+- MariaDB or MySQL 5.1+ 
 
 ## Installation 
 1. You need to create database and edit database config in TaskyLand/app/config/database.php.
@@ -35,16 +35,16 @@ You must send HTTP header <b>Authorization:Basic base64_encode(Account:Password)
 Also you must send HTTP header <b>Content-Type:application/x-www-form-urlencoded</b> for POST and PUT requests.
 API basic route is <b>http://localhost:8000/api</b>.
 You can use HTTP methods(GET, POST, PUT, DELETE) to access to these routes:
-- <b>/user/{user_id?}
-- /user/{user_id}/project
-- /user/{user_id}/task
-- /user/{user_id}/progress
-- /project/{project_id?}
-- /project/{project_id}/task/{task_id?}
-- /project/{project_id}/task/{task_id}/progress/{progress_id?}
-- /task/{task_id}
-- /progress/{progress_id}
-- /auth</b>
+- <b>/user/{user_id?}</b>
+- <b>/user/{user_id}/project</b>
+- <b>/user/{user_id}/task</b>
+- <b>/user/{user_id}/progress</b>
+- <b>/project/{project_id?}</b>
+- <b>/project/{project_id}/task/{task_id?}</b>
+- <b>/project/{project_id}/task/{task_id}/progress/{progress_id?}</b>
+- <b>/task/{task_id}</b>
+- <b>/progress/{progress_id}</b>
+- <b>/auth</b>
 
 For example <b>GET http://localhost:8000/api/project/1/task</b> returns JSON response, which contains project tasks. 
 Also service support many request parameters for selecting and filtering entities.
@@ -52,6 +52,6 @@ For more information about routes and request parameters you can read sources Ta
 
 ### Reports
 Reports is a normal html pages and accessable via browser. 
-- <b>http://localhost:8000/report/user/{user_id}/{project_id?}
-- http://localhost:8000/report/project{project_id}</b>
+- <b>http://localhost:8000/report/user/{user_id}/{project_id?}</b>
+- <b>http://localhost:8000/report/project{project_id}</b>
 
